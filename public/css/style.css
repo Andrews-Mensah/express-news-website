@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: rgb(223, 217, 217);
+}
+
+/* img{ width: 100%;} */
+h2{ font-size: 2rem}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.search {
+    color: rgb(159, 28, 28)
+}
+
+.wrapper{
+    padding: 0 1.5rem; 
+}
+
+.logo img {
+    width: 10rem;
+    height: 5rem;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.news .news-card{
+    text-decoration: none;
+    color: rgb(67, 62, 62);
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.news-single{
+    background-color: white;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding:2rem;
+}
