@@ -3,14 +3,13 @@ const newsRouter = express.Router();
 const axios = require('axios');
 
 
-newsRouter.get('/:id', async(req, res,next)=>{
+newsRouter.get('/singleArticle/:id', async(req, res,next)=>{
     // res.render('home')
 
     let articleID = req.params.id
-
     try{
         
-        const newsAPI = await axios.get(`https://ghgossip.com/wp-json/wp/v2/posts${articleID}`)
+        const newsAPI = await axios.get(`https://ghgossip.com/wp-json/wp/v2/posts/${articleID}`)
         res.render('singleArticle', {article: newsAPI.data})
 
 

@@ -22,7 +22,7 @@
     <div class="wrapper">
         <div class="news">
             <% articles.forEach(function (article, index) {%>
-                <a href="singleArticle/<%- article.id %>" class="news-card">
+                <a href="/singleArticle/<%- article.id %>" class="news-card">
 
                     <img src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered %>">
                     <h2><%- article.title.rendered %></h2>
